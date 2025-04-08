@@ -9,5 +9,8 @@ class Program
         Console.WriteLine("\n");
         var memberAgung = new TeamMembers103022300087();
         memberAgung.ReadJSON();
+        Console.WriteLine("\n");
+        var glossaryAgung = new GlossaryItem103022300087();
+        glossaryAgung.ReadJSON();
     }
 }
