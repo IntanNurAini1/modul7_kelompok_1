@@ -2,7 +2,7 @@
 {
     static void Main(string[] args)
     {
-        var DataGumi = new DataMahasiswa103022300137();
+        DataMahasiswa103022300137 DataGumi = new DataMahasiswa103022300137();
         Console.WriteLine("Memulai proses membaca data mahasiswa...");
         DataGumi.readJSON();
         Console.WriteLine("Proses selesai.\n");
