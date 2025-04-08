@@ -1,0 +1,46 @@
+{
+  "members": [
+    {
+      "firstName": "Fadhli",
+      "lastName": "Rabbi",
+      "gender": "male",
+      "age": 19,
+      "nim": "103022300055"
+    },
+    {
+      "firstName": "Agung",
+      "lastName": "Peramerta",
+      "gender": "male",
+      "age": 19,
+      "nim": "103022300087"
+    },
+    {
+      "firstName": "Muhammad",
+      "lastName": "Iqbal",
+      "gender": "male",
+      "age": 19,
+      "nim": "103022300146"
+    },
+    {
+      "firstName": "Steven",
+      "lastName": "Gerald",
+      "gender": "male",
+      "age": 20,
+      "nim": "103022300155"
+    },
+    {
+      "firstName": "Intan",
+      "lastName": "Nur Aini",
+      "gender": "female",
+      "age": 19,
+      "nim": "103022330067"
+    },
+    {
+      "firstName": "Gumilar",
+      "lastName": "Hari",
+      "gender": "male",
+      "age": 19,
+      "nim": "103022330075"
+    }
+  ]
+}
