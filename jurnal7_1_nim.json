@@ -1,0 +1,15 @@
+{
+   "firstName": "Raihan",
+   "lastName": "AnandaPutra",
+   "gender": "male",
+   "age": 21,
+   "address": {
+       "streetAddress": "bojongsoang",
+       "city": "Bandung",
+       "state": "West Java"
+   },
+   "courses": [
+       { "code": "CRI2C4", "name": "Konstruksi Perangkat Lunak" },
+       { "code": "CRI2c2", "name": "Struktur Data" }
+   ]
+}
