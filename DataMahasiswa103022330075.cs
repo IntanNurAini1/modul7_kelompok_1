@@ -11,18 +11,18 @@ namespace modul7_kelompok_1
     {
         public class Mahasiswa
         {
-            public string firstname { get; set }
-            public string lastname { get; set }
-            public string gender { get; set }
-            public int age { get; set }
-            public Address Address { get; set }
+            public string firstname { get; set; }
+            public string lastname { get; set; }
+            public string gender { get; set; }
+            public int age { get; set; }
+            public Address Address { get; set; }
             
         }
         public class Address
         {
-            public string streetAddress { get; set }
-            public string city { get; set }
-            public string state { get;set }
+            public string streetAddress { get; set; }
+            public string city { get; set; }
+            public string state { get; set; }
         }
         public void ReadJSOn()
         {

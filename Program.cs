@@ -7,5 +7,8 @@ class PProgram
     {
         var Mahasiswa = new DataMahasiswa103022330075();
         Mahasiswa.ReadJSON();
+
+        var Member = new teamMembers103022330075();
+        Member.ReadJSON();
     }
 }
