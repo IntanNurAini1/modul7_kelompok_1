@@ -15,7 +15,7 @@ class Program
         glossaryAgung.ReadJSON();
         
         DataMahasiswa103022300137 DataGumi = new DataMahasiswa103022300137();
-        Console.WriteLine("Memulai proses membaca data mahasiswa...");
+        Console.WriteLine("\n\nMemulai proses membaca data mahasiswa...");
         DataGumi.readJSON();
         Console.WriteLine("Proses selesai.\n");
 
