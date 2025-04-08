@@ -26,7 +26,7 @@ class DataMahasiswa103022300137
     public string firstName { get; set; }
     public string lastName { get; set; }
     public string gender { get; set; }
-    public string age { get; set; }
+    public int age { get; set; }
 
     public address address { get; set; }
     public List<course> courses { get; set; }
