@@ -3,6 +3,6 @@
     static void Main(string[] args)
     {
         var dataIntan = new DataMahasiswa103022330067();
-        dataIntan.ReadJsonFile();
+        dataIntan.readJSON();
     }
 }

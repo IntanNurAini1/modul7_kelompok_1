@@ -12,10 +12,6 @@
        { "code": "CCK2KAB4", "name": "Konstruksi Perangkat Lunak" },
        { "code": "CCK2HAB", "name": "Basis Data" },
     {
-      "code": "CCK2HAB",
-      "name": ""
-    },
-    {
       "code": "CCK2FAB4",
       "name": "Arsitektur dan Desain PL"
     },

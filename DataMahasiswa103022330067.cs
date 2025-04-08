@@ -1,44 +1,49 @@
 ﻿using System;
-using System.IO;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;  
 using System.Text.Json;
-
-public class  DataMahasiswa103022330067
+using System.Threading.Tasks;
+public class Add
 {
-   
-        public string namad { get; set; }
-        public string namab { get; set; }
-        public string Alamat { get; set; }
-        public int umur { get; set; }
-        public List<co> course { get; set; }
+    public string streetAddress { get; set; }
+    public string city { get; set; }
+    public string state { get; set; }
+}
 
-    
+public class course
+{
+    public string code { get; set; }
+    public string name { get; set; }
+}
+class DataMahasiswa103022330067
+{
 
-    public class  co
+
+    public class DataMahasiswa
     {
-        public string code { get; set; }
-        public string namac { get; set; }
-    }
+        public string firstName { get; set; }
+        public string lastName { get; set; }
+        public string gender { get; set; }
+        public int age { get; set; }
 
-    public void ReadJsonFile()
+        public Add address { get; set; }
+        public List<course> courses { get; set; }
+        
+    }
+    public void readJSON()
     {
         string path = "jurnal7_1_103022330067.json";
-        try
+        string jsonString = File.ReadAllText(path);
+        var dataMahasiswa = JsonSerializer.Deserialize<DataMahasiswa>(jsonString);
+        Console.WriteLine($"Nama Depan: { dataMahasiswa.firstName}");
+        Console.WriteLine($"Nama Belakang:  {dataMahasiswa.lastName}");
+        Console.WriteLine($"gender : {dataMahasiswa.gender}");
+        Console.WriteLine($"Alamat : {dataMahasiswa.address.streetAddress}, {dataMahasiswa.address.city}, {dataMahasiswa.address.state}");
+        foreach (var course in dataMahasiswa.courses)
         {
-            string jsonString = File.ReadAllText(path);
-            var data = JsonSerializer.Deserialize<DataMahasiswa103022330067>(jsonData);
-            Console.WriteLine("Nama Depan: " + data.namad);
-            Console.WriteLine("Nama Belakang: " + data.namab);
-            Console.WriteLine("Alamat: " + data.Alamat);
-            Console.WriteLine("Umur: " + data.umur);
-            foreach (var course in data.course)
-            {
-                Console.WriteLine("Kode Course: " + course.code);
-                Console.WriteLine("Nama Course: " + course.namac);
-            }
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine("Error reading JSON file: " + ex.Message);
+            Console.WriteLine($"Kode Mata Kuliah: {course.code}");
+            Console.WriteLine($"Nama Mata Kuliah: {course.name}");
         }
     }
 }
