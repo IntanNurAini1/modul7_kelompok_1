@@ -1,0 +1,35 @@
+{
+   "firstName": "Intan",
+   "lastName": "Nur Aini",
+   "gender": "female",
+   "age": 19,
+   "address": {
+       "streetAddress": "Buah Batu",
+       "city": "Bandung",
+       "state": "West Java"
+   },
+   "courses": [
+       { "code": "CCK2KAB4", "name": "Konstruksi Perangkat Lunak" },
+       { "code": "CCK2HAB", "name": "Basis Data" },
+    {
+      "code": "CCK2HAB",
+      "name": ""
+    },
+    {
+      "code": "CCK2FAB4",
+      "name": "Arsitektur dan Desain PL"
+    },
+    {
+      "code": "CCK2JAC",
+      "name": "Proyek Tingkat II"
+    },
+    {
+      "code": "CCK2IAB3",
+      "name": "Dasar Jaringan Komputer"
+    },
+    {
+      "code": "CCK2LAB3",
+      "name": "Kecerdasan Buatan"
+    }
+   ]
+}
