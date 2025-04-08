@@ -37,7 +37,7 @@ class DataMahasiswa103022300137
                 string path = "jurnal7_1_103022300137.json";
                 string jsonString = File.ReadAllText(path);
 
-                dataMahasiswa mhs = JsonSerializer.Deserialize<dataMahasiswa>(json);
+                dataMahasiswa mhs = JsonSerializer.Deserialize<dataMahasiswa>(jsonString);
 
                 Console.WriteLine("Nama Depan: " + mhs.firstName);
                 Console.WriteLine("Nama Belakang: " + mhs.lastName);
