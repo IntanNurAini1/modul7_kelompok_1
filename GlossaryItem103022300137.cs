@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.IO;
 using System.Text.Json;
-using System.Threading.Tasks;
 
 public class GlossDef
 {
@@ -24,7 +22,7 @@ public class GlossEntry
 
 public class GlossList
 {
-    public List<GlossEntry> GlossEntry { get; set; }
+    public GlossEntry GlossEntry { get; set; }  
 }
 
 public class GlossDiv
@@ -36,10 +34,10 @@ public class GlossDiv
 public class Glossary
 {
     public string title { get; set; }
-    public string GlossDiv { get; set; }
+    public GlossDiv GlossDiv { get; set; }
 }
 
-class GlossaryItem103022300137
+public class GlossaryItem103022300137
 {
     public Glossary glossary { get; set; }
 
@@ -49,15 +47,15 @@ class GlossaryItem103022300137
         {
             string path = "jurnal7_3_103022300137.json";
             string jsonString = File.ReadAllText(path);
-            Glossary glossaryItem = JsonSerializer.Deserialize<Glossary>(jsonString);
+            GlossaryItem103022300137 data = JsonSerializer.Deserialize<GlossaryItem103022300137>(jsonString);
 
-            var entry = GlossaryItem103022300137.Glossary.GlossDiv.GlossList.GlossEntry;
+            var entry = data.glossary.GlossDiv.GlossList.GlossEntry;
             Console.WriteLine("ID: " + entry.ID);
             Console.WriteLine("Term: " + entry.GlossTerm);
             Console.WriteLine("Acronym: " + entry.Acronym);
             Console.WriteLine("Abbrev: " + entry.Abbrev);
             Console.WriteLine("Definisi: " + entry.GlossDef.para);
-            Console.WriteLine("GlossSee: " + string.Join(", ", entry.GlossDef.GlossSeeAlso));
+            Console.WriteLine("GlossSeeAlso: " + string.Join(", ", entry.GlossDef.GlossSeeAlso));
             Console.WriteLine("GlossSee: " + entry.GlossSee);
         }
         catch (Exception ex)
@@ -66,5 +64,3 @@ class GlossaryItem103022300137
         }
     }
 }
-
-
